@@ -6,22 +6,16 @@
 
 main:
   - title: "Publications"
-    url: https://mawassw.github.io/cv/
+    url: https://mawassw.github.io/publications/
 
   - title: "Talks"
-    url: /talks/    
+    url: https://mawassw.github.io/talks/    
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
+    url: https://mawassw.github.io/teaching/ 
         
   - title: "Blog Posts"
-    url: /year-archive/
+    url: https://mawassw.github.io/year-archive/
     
   - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: https://mawassw.github.io/cv/
