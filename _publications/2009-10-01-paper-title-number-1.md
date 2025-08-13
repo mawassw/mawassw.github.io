@@ -1,14 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Genotype-by-environment interactions modulate the rate of microevolution in reproductive timing in humans"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: 'https://academic.oup.com/evolut/article/76/7/1391/6966337'
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2022-07-01
+venue: 'Evolution'
+paperurl: 'https://academic.oup.com/evolut/article-pdf/76/7/1391/50264318/evolut1391.pdf'
+citation: 'Walid Mawass, Francine M. Mayer, Emmanuel Milot, Genotype-by-environment interactions modulate the rate of microevolution in reproductive timing in humans, Evolution, Volume 76, Issue 7, 1 July 2022, Pages 1391–1405, https://doi.org/10.1111/evo.14504'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
