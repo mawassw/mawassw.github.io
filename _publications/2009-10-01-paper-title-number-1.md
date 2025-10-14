@@ -3,7 +3,7 @@ title: "Genotype-by-environment interactions modulate the rate of microevolution
 collection: publications
 category: manuscripts
 permalink: 'https://academic.oup.com/evolut/article/76/7/1391/6966337'
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'This paper is about detecting GxE in a human life history trait and assessing its influence on evolutionary change'
 date: 2022-07-01
 venue: 'Evolution'
 paperurl: 'https://academic.oup.com/evolut/article-pdf/76/7/1391/50264318/evolut1391.pdf'
