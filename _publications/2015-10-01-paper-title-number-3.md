@@ -1,9 +1,9 @@
 ---
-title: "Paper Title Number 3"
+title: "Contrasting evolutionary outcomes in a human life history trait which is heritable and under consistent unbiased directional selection"
 collection: publications
 category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: 'This paper is about testing the consistency of evolutionary trajectories across replicates when a trait is under selection and evidently heritable'
 date: 2015-10-01
 venue: 'Journal 1'
 slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
