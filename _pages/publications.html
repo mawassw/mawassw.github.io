@@ -5,17 +5,20 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{https://scholar.google.com/citations?user=jWx2LQoAAAAJ&hl=en}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+<!-- Ordered by the `sort_order` field in each _publications file, so that the
+     grouping and sequence match the CV rather than being driven by date alone. -->
+{% assign publications = site.publications | sort: 'sort_order' %}
+
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in publications %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -27,10 +30,7 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% for post in publications %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-

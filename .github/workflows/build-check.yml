@@ -1,0 +1,46 @@
+name: Build check
+
+# Verifies that the site builds before anything reaches `master`.
+#
+# GitHub Pages builds `master` itself, but a failed Pages build is not deployed and
+# not loudly reported — the previous build keeps serving, so a broken commit shows up
+# as "my change never appeared" rather than as an error. This workflow moves that
+# failure earlier, onto the branch or pull request, where it is visible.
+#
+# Deliberately does not run on `master`: Pages already builds that, and duplicating
+# it here would just report the same result twice.
+
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Ruby 3.3: the `github-pages` gem does not yet support 3.4, which dropped
+      # several stdlib gems it depends on.
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      # Gemfile.lock is gitignored, so resolve fresh rather than using bundler-cache
+      # (which needs a committed lockfile to key its cache).
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: Report output size
+        run: |
+          echo "Pages built:"
+          find _site -name '*.html' | wc -l
+          du -sh _site

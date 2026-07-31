@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Walid Mawass / Academic Website"
+title                    : "Walid Mawass"
 title_separator          : "-"
 name                     : &name "Walid Mawass"
 description              : &description "Evolutionary geneticist and quantitative biologist"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://mawassw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "mawassw/mawassw.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -44,22 +44,25 @@ author:
   bluesky          : "wmawass.bsky.social"
   linkedin         : "https://www.linkedin.com/in/walid-mawass-a251bb10a/"
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - The following the list of publication categories and their headings.
+#                        The keys must match the `category:` field in _publications/*.md
+#                        files exactly, or the entry is silently omitted from /publications/.
+#                        Display order on the page follows the order below.
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  peer_reviewed:
+    title: 'Peer-Reviewed &amp; Accepted'
+  preprints:
+    title: 'Preprints (Under Review)'
+  in_preparation:
+    title: 'Manuscripts in Preparation'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # filename of a fallback teaser image placed in /images/
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
-talkmap_link             : true #change to true to add link to talkmap on talks page
+talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
   provider               : false
   disqus:
@@ -117,6 +120,7 @@ social:
     - "https://github.com/mawassw"
     - "https://www.linkedin.com/in/walid-mawass-a251bb10a/"
     - "https://twitter.com/MawassWalid"
+    - "https://bsky.app/profile/wmawass.bsky.social"
 
 
 # Analytics
@@ -193,7 +197,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  research:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -239,15 +243,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _research
   - scope:
       path: ""
-      type: portfolio
+      type: research
     values:
       layout: single
       author_profile: true
       share: true
-      comment: true
   # _talks
   - scope:
       path: ""

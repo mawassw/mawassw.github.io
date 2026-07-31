@@ -11,3 +11,7 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Local guidance file for Claude Code. Deliberately untracked: this repository is
+# public, and the file references the private job packet and CV revision notes.
+CLAUDE.md

@@ -17,7 +17,7 @@ I study the **evolutionary processes that generate and constrain biological dive
 
 - **Environmental fluctuations and demographic change**
 - **Genetic architecture and mutational constraints**
-- **Structure and bias in genetic and phentoypic data**
+- **Structure and bias in genetic and phenotypic data**
 - **Interactions between selection, environment, and plasticity**
 
 I aim to contribute to evolutionary theory and its application by integrating **empirical studies**, **computational simulations**, and **statistical tool development**. A significant part of my work builds models that not only explain evolutionary patterns but also improve our capacity to predict future responses to environmental or demographic challenges — a goal with deep relevance to **conservation**, **public health**, and **evolutionary forecasting**.
@@ -31,7 +31,7 @@ I aim to contribute to evolutionary theory and its application by integrating **
 - Applied **random matrix theory** to quantify bias in polygenic score–based inference, showing how residual population stratification affect interpretations of GWAS data.
 - Developed a theoretical framework to analyze the effects of **unlinked background selection** on neutral diversity, integrating quantitative models with empirical estimates of genetic parameters to better understand the genome-wide patterns in non-model species.
 
-For a full list of publications, see my [CV](/cv/) or [Publications](/publications/) page.
+For more on each of these, see my [Research](/research/) pages. For a full list of publications, see my [CV](/cv/) or [Publications](/publications/) page.
 
 ---
 
@@ -61,4 +61,4 @@ I believe that science should be **collaborative, inclusive, and publicly engage
 
 ---
 
-Feel free to explore the rest of this website for more on my [research](/publications/), [CV](/cv/), [talks](/talks/), and [contact information](/contact/). You can also find my code and collaborations on [GitHub](https://github.com/mawassw).
+Feel free to explore the rest of this website for more on my [research](/research/), [publications](/publications/), [CV](/cv/), [talks](/talks/), [teaching](/teaching/), and [contact information](/contact/). You can also find my code and collaborations on [GitHub](https://github.com/mawassw).

@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>My research asks what constrains the pace and predictability of evolution, and how
+reliably we can infer evolutionary processes from data that are structured, incomplete,
+and noisy. It runs across four connected threads &mdash; from statistical inference in
+human genetics to the long-term fate of small populations.</p>
+
+{% assign threads = site.research | sort: 'sort_order' %}
+{% for post in threads %}
+  {% include archive-single.html %}
+{% endfor %}
