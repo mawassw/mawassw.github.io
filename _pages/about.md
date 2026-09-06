@@ -7,58 +7,65 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I’m **Walid Mawass**, an evolutionary geneticist and quantitative biologist with a deep interest in how evolutionary processes unfold and interact across timescales — from rapid adaptation in contemporary populations to the long-term genetic dynamics that shape species persistence. My research is united by a central question: **What constrains the pace and predictability of evolution, and how can we best infer its operation from complex, structured, and noisy data?**
+Welcome! I'm **Walid Mawass**, an evolutionary geneticist currently a postdoctoral scholar with Jeremy Berg at the University of Chicago. My research studies how population history shapes genetic variation and trait architecture — and what that determines about outcomes. In wild and historical populations those outcomes are **adaptive**: whether a declining population can respond, persist, and recover. In human complex-trait genetics they are **predictive**: whether a polygenic score works for the person it is applied to. The underlying question is the same in both cases. The data, stakes, and audiences differ.
 
 ---
 
-## Research Vision
+## Two Research Programs
 
-I study the **evolutionary processes that generate and constrain biological diversity**, using a combination of **theoretical models**, **quantitative genetics**, and **statistical inference** applied to genomic and historical data, supplemented with computational simulations. My work spans multiple biological scales and methodological domains, with a common focus on how evolutionary dynamics are shaped by:
+### Program I &mdash; Evolutionary Genetics of Adaptation and Persistence
 
-- **Environmental fluctuations and demographic change**
-- **Genetic architecture and mutational constraints**
-- **Structure and bias in genetic and phenotypic data**
-- **Interactions between selection, environment, and plasticity**
+*Relevant to: evolutionary biology, ecology, integrative biology, conservation genetics*
 
-I aim to contribute to evolutionary theory and its application by integrating **empirical studies**, **computational simulations**, and **statistical tool development**. A significant part of my work builds models that not only explain evolutionary patterns but also improve our capacity to predict future responses to environmental or demographic challenges — a goal with deep relevance to **conservation**, **public health**, and **evolutionary forecasting**.
+This program asks what constrains evolutionary response in wild and historical populations: can a population adapt in one fitness component while declining in another; how much of its heritable variation can selection actually use; and what does surviving a population crash cost in the direction of remaining variation? I use long-term pedigree records from monitored vertebrate populations and preindustrial human genealogies, forward-time simulations across finite genomes, and analytical quantitative-genetic and allele-frequency frameworks. The conservation implication is concrete: wildlife managers currently lack a way to assess, before intervening through genetic rescue or assisted migration, whether the heritable variation a population carries will respond to the selection it faces.
+
+### Program II &mdash; Population History and Human Genetic Architecture
+
+*Relevant to: genetics, human genetics, genomics, molecular and cell biology*
+
+This program asks what population history did to the variation underlying complex traits that medicine now predicts from: how much sits in rare variants that selection held at low frequency; whether ancestry stratification that survives principal-component correction propagates coherently into polygenic scores and tests for polygenic adaptation; and whether the genetic basis of a trait turns over between populations fast enough that a score trained in one cannot follow it into another. I develop analytical frameworks drawing on random matrix theory, allele frequency spectra, and quantitative genetics, and apply them to biobank-scale GWAS data and cohort records. Failures of polygenic prediction turn out to be partly evolutionary in origin — predictable from demographic history before clinical deployment, not only discoverable from clinical failure afterward.
+
+### What connects them
+
+Population history acts on genetic variation twice: directly, through which variants a population carries and at what frequency; and indirectly, through what demographic events did to the trait's architecture — how variation is distributed across loci, how rare or common, and whether organized in ways selection can use. That dual action is what Program I studies in wild populations trying to adapt, and what Program II studies in clinical genetics trying to predict. The empirical toolkit is the same: pedigree-based quantitative genetics, allele frequency theory, and forward simulation — applied to systems as different as Soay sheep on St Kilda and large-scale GWAS in the UK Biobank.
 
 ---
 
 ## Selected Research Highlights
 
-- Demonstrated how **genotype-by-environment interactions (G×E)** constrain responses to selection in human life-history traits, showing that adaptation rates can vary even under consistent selection pressures and heritability.
-- Developed the concept of **mutational drought** as a novel driver of extinction vortices in small populations, using simulations to show that a lack of beneficial mutations, not just accumulation of deleterious ones, can accelerate population demise at long time scales.
-- Applied **random matrix theory** to quantify bias in polygenic score–based inference, showing how residual population stratification affect interpretations of GWAS data.
-- Developed a theoretical framework to analyze the effects of **unlinked background selection** on neutral diversity, integrating quantitative models with empirical estimates of genetic parameters to better understand the genome-wide patterns in non-model species.
+- **Mutational drought.** Showed that a shortage of beneficial mutations &mdash; not merely accumulation of deleterious ones &mdash; is the dominant driver of extinction vortices in small populations over long timescales. The mechanism implies that the populations currently classified as genetically stable may already be in the deficit regime; and that genetic rescue strategies need to address the supply of beneficial variation, not only deleterious load. *(Proc. Royal Soc. B, 2026)*
 
-For more on each of these, see my [Research](/research/) pages. For a full list of publications, see my [CV](/cv/) or [Publications](/publications/) page.
+- **Evolutionary non-predictability.** Demonstrated that genotype-by-environment interactions modulate rates of microevolution in human life-history traits, and that replicate populations under consistent selection still reach contrasting evolutionary outcomes &mdash; a violation of the core quantitative-genetic prediction that bounds how far evolutionary forecasting can be pushed in structured populations. *(Evolution, 2022; J. Evol. Biol., 2025; bioRxiv preprint)*
 
----
+- **Stratification and polygenic scores.** Applied random matrix theory to characterize when PCA correction for population stratification fails &mdash; not when structure is strongest, but where it first becomes detectable &mdash; and developed diagnostics quantifying how much residual stratification survives into polygenic score associations and selection tests. *(bioRxiv preprint; manuscript in preparation)*
 
-## Methods & Tools
+- **Heritable fitness variance and neutral diversity.** Developed a theoretical framework linking heritable fitness variance, measured from 19 monitored vertebrate pedigrees, to expected genome-wide neutral diversity through unlinked background selection. The estimates are irreconcilable in both directions &mdash; too small for the observed diversity deficits, too large to sustain under mutation&ndash;selection&ndash;drift balance &mdash; no rescaling resolves both at once. *(Manuscript in preparation)*
 
-My work blends evolutionary theory with modern computational and statistical tools, including:
-
-- **Bayesian and mixed-effects models** in R and Python
-- **Forward-time simulations** using SLiM and tree-sequence recording with `tskit`
-- **High-performance computing pipelines** and workflow automation
-- **Quantitative genetic modeling** with pedigree and genomic data
-- Statistical correction and modeling of **population structure** in GWAS and PGS analyses
-
-I value open science and reproducibility, and I make a conscious effort to share data, code, and models where possible.
+For the full list of publications see my [CV](/cv/) or [Publications](/publications/) page.
 
 ---
 
-## Mentorship & Teaching
+## Methods &amp; Tools
 
-I am committed to mentoring students in **quantitative and computational biology**, helping them build strong foundations in modeling, data analysis, and interpretation. I’ve led and co-led graduate seminars, guest lectured on quantitative genetics, and supervised student projects from concept to publication. My teaching emphasizes active learning, collaborative inquiry, and the cultivation of intuitive scientific thinking.
+- **Analytical frameworks:** random matrix theory, moment equations, allele frequency spectra, quantitative genetic modeling with pedigree and genomic data
+- **Simulation:** forward-time simulators in C, SLiM, msprime, tree-sequence recording with `tskit`
+- **Statistical modeling:** Bayesian and mixed-effects models, variance partitioning, population stratification correction in GWAS and PGS analyses
+- **Infrastructure:** HPC pipelines, Snakemake, Python (NumPy, SciPy, pandas), R
+
+I value open science and share data, code, and models where possible.
 
 ---
 
-## Service & Outreach
+## Mentorship &amp; Teaching
 
-I believe that science should be **collaborative, inclusive, and publicly engaged**. I’ve served in leadership roles in organizations like the Genetics Society of America (GSA), facilitated workshops for international students, and mentored high school students in scientific experimentation and computational biology. These experiences reflect my commitment to equity, mentorship, and science communication across career stages and communities.
+I am committed to mentoring students in **quantitative and computational evolutionary biology and genetics**. I have supervised projects from concept to publication, led and co-led graduate seminars, guest-lectured on quantitative genetics, and mentored high school students from underrepresented backgrounds. Research in my group runs on simulation and existing pedigree or genomic datasets, which means it scales to diverse teaching loads and engages undergraduates at well-defined entry points before the full empirical work begins.
 
 ---
 
-Feel free to explore the rest of this website for more on my [research](/research/), [publications](/publications/), [CV](/cv/), [talks](/talks/), [teaching](/teaching/), and [contact information](/contact/). You can also find my code and collaborations on [GitHub](https://github.com/mawassw).
+## Service &amp; Outreach
+
+I have served in leadership roles in the Genetics Society of America's Early Career Leadership Program, facilitated workshops for international students, and mentored high school students in Python, statistical genetics, and data analysis through UChicago's COMBO program. I serve as an ad hoc peer reviewer and have organized and chaired sessions at international conferences including the Evolution Conference.
+
+---
+
+Explore my [research](/research/), [publications](/publications/), [CV](/cv/), [talks](/talks/), [teaching](/teaching/), and [contact information](/contact/). Code and collaborations are on [GitHub](https://github.com/mawassw).

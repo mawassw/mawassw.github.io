@@ -7,10 +7,21 @@ author_profile: true
 
 {% include base_path %}
 
-<p>My research asks what constrains the pace and predictability of evolution, and how
-reliably we can infer evolutionary processes from data that are structured, incomplete,
-and noisy. It runs across four connected threads &mdash; from statistical inference in
-human genetics to the long-term fate of small populations.</p>
+<p>My research runs across two connected programs organized around a shared question: how much does a population&rsquo;s history determine what it can do next &mdash; and can we know that before it matters?</p>
+
+<div class="notice--info">
+  <h4>Program I &mdash; Evolutionary Genetics of Adaptation and Persistence</h4>
+  <p>For readers from <strong>evolutionary biology, ecology, integrative biology, and conservation genetics</strong>.</p>
+  <p>This program studies what constrains evolutionary response in wild and historical populations: whether a population can adapt and decline simultaneously; how much of its heritable variation selection can actually use; and what a population crash costs in the direction of remaining variation. It draws on long-term pedigree records from monitored vertebrate populations and preindustrial human genealogies, forward-time simulation across finite genomes, and analytical quantitative genetics. Most directly relevant threads: <em>Mutational drought and the fate of small populations</em>, <em>Evolutionary predictability in human populations</em>, <em>Linked selection and the neutral diversity we actually observe</em>.</p>
+</div>
+
+<div class="notice--primary">
+  <h4>Program II &mdash; Population History and Human Genetic Architecture</h4>
+  <p>For readers from <strong>genetics, human genetics, genomics, and molecular and cell biology</strong>.</p>
+  <p>This program asks what population history did to the variation underlying complex traits that medicine now predicts from: how much sits in rare variants selection held at low frequency; whether ancestry stratification that survives PCA correction propagates coherently into polygenic scores and selection tests; and whether a trait&rsquo;s genetic basis turns over between populations fast enough that a score cannot follow it. It draws on random matrix theory, allele frequency spectra, and biobank-scale GWAS data. Most directly relevant thread: <em>Population stratification and the limits of polygenic inference</em>. The quantitative-genetic and linked-selection work in Program I provides the analytical foundation that connects both programs &mdash; population history acting on variation twice, in wild populations and in clinical prediction alike.</p>
+</div>
+
+<hr />
 
 {% assign threads = site.research | sort: 'sort_order' %}
 {% for post in threads %}
