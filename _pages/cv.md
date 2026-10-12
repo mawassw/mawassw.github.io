@@ -109,6 +109,7 @@ Leadership, Service &amp; Outreach
 * WAMBAM — *2017*
 * Journées Généalogie et Génétique — *2017*
 * SQEBC — *2018*
+* MidWest Population Genetics Symposium — *2026*
 
 **Outreach and Service**
 * GSA ECLP alumni mentorship program — *2025*

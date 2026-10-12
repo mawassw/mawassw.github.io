@@ -1,13 +1,13 @@
 ---
-title: "Empirically reported heritable fitness variance predicts severe depletion of neutral diversity in wild populations"
+title: "Measured fitness variance is too weak to explain the missing diversity"
 collection: publications
 category: in_preparation
-sort_order: 6
+sort_order: 7
 authors: 'Mawass, W.'
 status: 'In preparation &mdash; advanced manuscript available upon request'
-excerpt: 'Taking published estimates of heritable fitness variance at face value implies far more depletion of neutral diversity than is typically observed. This work develops the theory of unlinked background selection needed to reconcile the two.'
+excerpt: 'Published heritable fitness variances from 19 vertebrate populations are too small to explain observed diversity deficits, and at the same time too large to be maintained at equilibrium.'
 ---
 
-Wild population studies routinely report substantial heritable variance in fitness. If those estimates are taken at face value, standard theory predicts a severe reduction in genome-wide neutral diversity through unlinked background selection — considerably more than is generally observed.
+Heritable differences in fitness lower a population's effective size and reduce neutral diversity across the whole genome, so each observed diversity deficit implies a certain amount of selected fitness variance.
 
-This project develops the analytical framework needed to evaluate that tension, integrating quantitative genetic models with empirical parameter estimates from monitored wild populations, and accounting for recombination and functional target size. The aim is a coherent account of genome-wide diversity patterns in non-model species.
+Published data from 19 monitored vertebrate populations present a paradox: the reported fitness variances are too small to explain the observed deficits, and at the same time too large to be maintained under mutation&ndash;selection&ndash;drift balance. Measurement bias cannot resolve it &mdash; adjusting the estimates in either direction closes one gap and widens the other. The implication is that these populations are far from equilibrium.

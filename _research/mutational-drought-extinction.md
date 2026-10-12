@@ -23,5 +23,5 @@ The two mechanisms imply different interventions. If meltdown dominates, the pri
 ## Related work
 
 - Mawass, Hernández, Matheson, Berg & Masel, *Extinction vortices are driven more by a shortage of beneficial mutations than by deleterious mutation accumulation*, **Proceedings of the Royal Society B** (2026)
-- Hernández, Mawass, Matheson & Masel, *Rare variants drive high variance in human ancestral fitness at mutation-selection-drift balance* (in preparation)
+- Hernández, Mawass, Matheson & Masel, *Rare variants drive high variance in human ancestral fitness at mutation-selection-drift balance*, bioRxiv preprint (2026)
 - Marcelle, Hernández, Mawass, Gutenkunst & Masel, *High deleterious mutation rate distorts site frequency spectrum in mammals* (in preparation)

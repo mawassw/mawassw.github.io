@@ -2,7 +2,7 @@
 title: "Evaluating bias in polygenic score associations due to imperfect control of population stratification"
 collection: publications
 category: in_preparation
-sort_order: 7
+sort_order: 8
 authors: 'Mawass, W., Blanc, J., Sherif, A., and Berg, J. J.'
 status: 'In preparation &mdash; advanced manuscript available upon request'
 excerpt: 'A random matrix theory treatment of what principal component correction can and cannot remove, and how the residual propagates into polygenic score associations.'

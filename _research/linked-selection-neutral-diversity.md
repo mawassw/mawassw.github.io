@@ -2,13 +2,13 @@
 title: "Linked selection and the neutral diversity we actually observe"
 collection: research
 permalink: /research/linked-selection-neutral-diversity
-excerpt: "Published estimates of heritable fitness variance imply a far greater depletion of neutral diversity than we observe. Resolving that tension requires taking unlinked background selection seriously."
+excerpt: "Published heritable fitness variances are too small to explain the diversity wild populations have lost, and too large to be maintained at equilibrium. No rescaling of the estimates resolves both at once."
 sort_order: 3
 ---
 
-Long-term studies of wild populations regularly report substantial heritable variance in fitness. Taken at face value, standard theory says such variance should scour genome-wide neutral diversity through **background selection**, including from unlinked sites. The depletion this predicts is considerably more severe than what is generally observed.
+Long-term studies of wild populations regularly report substantial heritable variance in fitness. When fitness differences are inherited, uneven reproductive success lowers effective population size and reduces neutral diversity across the whole genome through **background selection**, including from unlinked sites. Each observed diversity deficit therefore implies a certain amount of selected fitness variance.
 
-Something in that chain is wrong, and this line of work is about finding out what. Either the reported fitness variance estimates are inflated by unmodelled environmental structure, or the theory connecting fitness variance to neutral diversity is missing something, or both.
+Published data from 19 monitored vertebrate populations do not fit that expectation in either direction. The reported fitness variances are too small to explain the observed deficits, and at the same time too large to be maintained under mutation&ndash;selection&ndash;drift balance. Measurement bias cannot explain the paradox: adjusting the estimates in either direction closes one gap and widens the other. What it points to instead is that these populations are far from equilibrium.
 
 ## Approach
 
@@ -22,6 +22,6 @@ Neutral diversity is the input to most demographic and conservation genetic infe
 
 ## Related work
 
-- Mawass, *Empirically reported heritable fitness variance predicts severe depletion of neutral diversity in wild populations* (in preparation)
+- Mawass, *Measured fitness variance is too weak to explain the missing diversity* (in preparation)
 - Zhou, Mawass, Hayward & Berg, *Linked neutral diversity under stabilizing selection: a two-locus moments model* (in preparation)
 - Marcelle, Hernández, Mawass, Gutenkunst & Masel, *High deleterious mutation rate distorts site frequency spectrum in mammals and leads to erroneous inference of demographic expansions* (in preparation)
