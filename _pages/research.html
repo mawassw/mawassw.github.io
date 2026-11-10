@@ -7,21 +7,47 @@ author_profile: true
 
 {% include base_path %}
 
-<p>My research runs across two connected programs organized around a shared question: how much does a population&rsquo;s history determine what it can do next &mdash; and can we know that before it matters?</p>
+<p>My research is organized around three questions about how genetic variation is built, how it is measured, and what it can do. They cut across systems, from wild vertebrates to historical human populations to modern biobanks, because the underlying problem is the same in each: the quantities evolutionary and human genetics depend on are rarely observed directly, and their interpretation rests on models that must be tested rather than assumed.</p>
 
-<div class="notice--info">
-  <h4>Program I &mdash; Evolutionary Genetics of Adaptation and Persistence</h4>
-  <p>For readers from <strong>evolutionary biology, ecology, integrative biology, and conservation genetics</strong>.</p>
-  <p>This program studies what constrains evolutionary response in wild and historical populations: whether a population can adapt and decline simultaneously; how much of its heritable variation selection can actually use; and what a population crash costs in the direction of remaining variation. It draws on long-term pedigree records from monitored vertebrate populations and preindustrial human genealogies, forward-time simulation across finite genomes, and analytical quantitative genetics. Most directly relevant threads: <em>Mutational drought and the fate of small populations</em>, <em>Evolutionary predictability in human populations</em>, <em>Linked selection and the neutral diversity we actually observe</em>.</p>
-</div>
+<h2>When does heritable variation become evolutionary change?</h2>
 
-<div class="notice--primary">
-  <h4>Program II &mdash; Population History and Human Genetic Architecture</h4>
-  <p>For readers from <strong>genetics, human genetics, genomics, and molecular and cell biology</strong>.</p>
-  <p>This program asks what population history did to the variation underlying complex traits that medicine now predicts from: how much sits in rare variants selection held at low frequency; whether ancestry stratification that survives PCA correction propagates coherently into polygenic scores and selection tests; and whether a trait&rsquo;s genetic basis turns over between populations fast enough that a score cannot follow it. It draws on random matrix theory, allele frequency spectra, and biobank-scale GWAS data. Most directly relevant thread: <em>Population stratification and the limits of polygenic inference</em>. The quantitative-genetic and linked-selection work in Program I provides the analytical foundation that connects both programs &mdash; population history acting on variation twice, in wild populations and in clinical prediction alike.</p>
-</div>
+<p>Quantitative genetics makes a simple, powerful promise: measure how heritable a trait is and how strongly selection acts on it, and you can predict how the population will evolve. That promise underlies how we forecast responses to climate change, judge whether an endangered population can recover, and design breeding programs. Natural populations often fail to keep it. Some traits stay put despite abundant heritable variation and consistent selection; other populations adapt rapidly and still go extinct. Knowing when the prediction holds, and why it breaks, decides whether evolutionary forecasting can be trusted when it matters most.</p>
+
+<p>I study the limits on evolutionary response in small, declining, and environmentally variable populations. Shrinking populations run short of beneficial mutations before harmful ones accumulate, a process I call <em>mutational drought</em>, so populations that look safe by standard measures of genetic load can still be close to collapse. In three centuries of French-Canadian genealogies, I showed that gene-by-environment interaction reshapes the rate of microevolution, and that sister populations with a heritable trait under consistent selection still failed to respond. I am now developing theory for what surviving a population crash costs: a shrinking population can run out of <em>directions</em> of variation, aligned with where selection will push next, before it runs out of variation itself.</p>
+
+<p class="small">More: <a href="{{ base_path }}/research/mutational-drought-extinction">Mutational drought and the fate of small populations</a> &middot; <a href="{{ base_path }}/research/human-quantitative-genetics-genealogies">Evolutionary predictability in human populations</a></p>
+
+<h2>What does an estimated genetic effect actually measure?</h2>
+
+<p>Genome-wide association studies have identified many thousands of variants associated with complex traits and disease, and their estimated effects now feed into risk prediction, heritability estimates, and tests for natural selection in humans. Each of those uses treats an allele&rsquo;s effect as a fixed property of its biology. It is not. A population-level estimate also absorbs ancestry, assortative mating, the genotypes of a person&rsquo;s parents, the environment they grew up in, and who survived long enough to be sampled. Untangling direct genetic effects from these signals is a precondition for reading genetic data as biology, and for knowing when a signal of selection is real.</p>
+
+<p>I build theory that separates direct causal effects from their confounders. Using random matrix theory, I showed that principal components can be statistically significant and still too imprecise to remove the ancestry differences they detect, so that residual stratification propagates coherently into polygenic scores and tests for polygenic adaptation. Building on that, I am developing frameworks to predict how much of a population-level association reflects direct effects, to distinguish an individual&rsquo;s own genetic sensitivity to the environment from environmentally responsive parental effects, and to determine whether genetic effects that weaken with age reflect biology or the earlier death of high-risk carriers.</p>
+
+<p class="small">More: <a href="{{ base_path }}/research/population-stratification-polygenic-scores">Population stratification and the limits of polygenic inference</a></p>
+
+<h2>What builds and maintains genetic variation?</h2>
+
+<p>Heritable variation in fitness is the raw material of adaptation and, through uneven reproductive success, one of the forces that erodes genetic diversity across the genome. How much of it natural populations carry, what maintains it, and how much diversity it removes are among the oldest questions in evolutionary genetics, and the answers shape nearly every inference built on neutral diversity, from effective population size to demographic history to the genetic health of threatened species. The same forces determine the shape of genetic architecture itself: why complex traits and diseases are influenced by so many variants, each of small effect.</p>
+
+<p>Bringing classical theory together with published estimates from 19 monitored vertebrate populations, I found that measured heritable fitness variance is too small to explain the diversity these populations have lost, and at the same time too large to be maintained by mutation, selection, and drift at equilibrium. No rescaling of the estimates resolves both. I also work on how selection on disease risk shapes the frequency and ancestral state of risk variants, on the footprint stabilizing selection leaves on linked neutral diversity, and on how polygenicity itself can arise without positive selection.</p>
+
+<p class="small">More: <a href="{{ base_path }}/research/linked-selection-neutral-diversity">Linked selection and the neutral diversity we actually observe</a></p>
+
+<h2>How I approach these problems</h2>
+
+<p>My work starts from theory: I derive what a quantity must be under a given model of mutation, selection, drift, and demography, then test whether the estimates the field relies on fall inside that range. Wherever possible, I test predictions in data where the answer can actually be checked.</p>
+
+<ul>
+  <li><strong>Analytical theory.</strong> Quantitative and population genetics, diffusion and moment equations, allele frequency spectra, eco-evolutionary and multivariate (Fisher&rsquo;s geometric) models of adaptation.</li>
+  <li><strong>High-dimensional statistics.</strong> Random matrix theory for principal component correction in biobank-scale data and for the geometry of multivariate genetic variation.</li>
+  <li><strong>Simulation.</strong> Forward-time whole-genome simulators written in C, SLiM, msprime, and tskit, run on high-performance computing pipelines.</li>
+  <li><strong>Statistical quantitative genetics.</strong> Animal models and Bayesian mixed models for partitioning genetic and environmental variance in pedigreed populations, and sensitivity analyses of the pedigrees themselves.</li>
+  <li><strong>Data.</strong> Multigenerational French-Canadian genealogies spanning millions of records, long-term pedigree studies of wild vertebrates, UK Biobank and HGDP genotypes, and GWAS summary statistics.</li>
+</ul>
 
 <hr />
+
+<h2>Research projects</h2>
 
 {% assign threads = site.research | sort: 'sort_order' %}
 {% for post in threads %}
