@@ -7,14 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I'm **Walid Mawass**, an evolutionary geneticist and postdoctoral scholar with Jeremy Berg at the University of Chicago. I study how population history shapes genetic variation and trait architecture, and what that determines about outcomes: whether a population can adapt and persist, and whether a polygenic score works in the population it is applied to.
+I'm **Walid Mawass**, an evolutionary geneticist and postdoctoral scholar with Jeremy Berg at the University of Chicago. I study how mutation, selection, and population history build the genetic variation underlying complex traits and fitness, and what that variation can and cannot tell us about a population's future.
 
-My work combines pedigree-based quantitative genetics, allele frequency theory, and forward-time simulation, applied to systems ranging from preindustrial human genealogies and monitored wild vertebrates to biobank-scale GWAS.
+Much of evolutionary and human genetics rests on quantities that are never observed directly: heritability, additive genetic variance, effective population size, the ancestry axes corrected for in every GWAS. My work uses theory to work out what those quantities must be, and then tests whether the field's working estimates fall inside that range. I combine analytical quantitative and population genetics, random matrix theory, and forward-time simulation with long-term data: multigenerational pedigrees of wild vertebrates, three centuries of French-Canadian genealogies, and biobank-scale human genomes.
 
 ## Research
 
-- **Adaptation and persistence.** What limits evolutionary response in wild and historical populations, and what small populations lose when beneficial mutations run short.
-- **Population history and human genetic architecture.** How demographic history and residual ancestry stratification shape what polygenic scores can and cannot predict.
+- **Adaptation and persistence.** When heritable variation becomes evolutionary change, and when it doesn't. Shrinking populations run short of beneficial mutations before harmful ones accumulate. Traits that are heritable and under consistent selection can still fail to evolve. And surviving a population crash can leave a population's remaining trait variation pointed away from where future selection will push.
+- **The context-dependence of genetic effects.** An estimated allele effect is not a fixed biological constant. It also carries ancestry, assortative mating, parental genotypes, environment, and who survived to be sampled. I build theory to separate direct causal effects from these signals: why statistically significant principal components can still leave stratification behind in polygenic scores and selection tests, how to tell gene-by-environment interaction from environmentally responsive parental effects, and whether effects that fade with age reflect biology or survivor bias.
+- **The origins and maintenance of genetic variation.** What maintains heritable variance in fitness in the wild, and how much of the missing neutral diversity it can explain. How selection on disease risk shapes its genetic architecture, and how polygenicity itself can arise without positive selection.
 
 [More on my research &rarr;](/research/)
 
